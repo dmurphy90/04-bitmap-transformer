@@ -9,3 +9,5 @@ fs.readFile('./assets/bitmap.bmp', (err, data) => {
   
   console.log(bmp.pixelArray.length);
 });
+
+transform.scatter([1, 5, 7]);
