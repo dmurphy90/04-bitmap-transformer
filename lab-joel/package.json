@@ -1,0 +1,26 @@
+{
+  "name": "04-bitmap-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmurphy90/04-bitmap-transformer.git"
+  },
+  "author": "Dean Murphy, Joel Clair, Jamie Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmurphy90/04-bitmap-transformer/issues"
+  },
+  "homepage": "https://github.com/dmurphy90/04-bitmap-transformer#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
