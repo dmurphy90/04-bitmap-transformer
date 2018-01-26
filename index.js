@@ -5,4 +5,5 @@ const Bmp = require('./lib/bitmap.js');
 const transform = require('./lib/transform.js');
 const reader = require('./lib/reader.js');
 
-reader.readWrite();
+
+reader.readWrite('../assets/bitmap.bmp', '../assets/invertColorMap.bmp', 'invertColor');
