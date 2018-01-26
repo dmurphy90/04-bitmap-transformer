@@ -16,4 +16,4 @@ reader.readWrite('assets/bitmap.bmp', 'assets/shuffleMap.bmp', 'shufflePixels');
 reader.readWrite('assets/bitmap.bmp', '__test__/testassets/shuffleMapTest.bmp', 'shufflePixels');
 
 reader.readWrite('assets/bitmap.bmp', 'assets/blackWhite.bmp', 'blackAndWhite');
-reader.readWrite('assets/bitmap.bmp', '__test__/testassets/blackWhiteMapTest.bmp', 'blackAndWhite');
+reader.readWrite('assets/bitmap.bmp', '__test__/testassets/blackWhiteTestMap.bmp', 'blackAndWhite');

@@ -7,6 +7,8 @@ const transform = require('./transform.js');
 
 
 reader.readWrite = function(inPath, outPath, transformMethod) {
+  if(!transformMethod || !inPath || !outPath) return null;
+
   try {
     var inputData = fs.readFileSync(inPath);
   } catch(err) {
@@ -36,14 +38,15 @@ reader.readWrite = function(inPath, outPath, transformMethod) {
     break;
 
   default:
-    console.log('invalid transform method try: flipImage : invertColor : shufflePixels : blackAndWhite');
+    return 'invalid transform method try: flipImage : invertColor : shufflePixels : blackAndWhite';
   }
   console.log('datatransfromed data === ', dataTransformed);
   try {
+    if(typeof outPath !== 'string') return '===ERROR===Not and instance of bmp constructor ===ERROR===';
     fs.writeFileSync(outPath, dataTransformed.allData);
     return 'IMAGE TRANSFORMED';
   } catch (err) {
     console.error(err);
-    return '===ERROR===L43reader';
+    return '===ERROR===Not and instance of bmp constructor ===ERROR===';
   }
 };
