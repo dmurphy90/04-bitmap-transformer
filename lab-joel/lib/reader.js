@@ -31,8 +31,12 @@ reader.readWrite = function(inPath, outPath, transformMethod) {
     dataTransformed = transform.shuffle(bmp);
     break;
 
+  case 'blackAndWhite':
+    dataTransformed = transform.blackWhite(bmp);
+    break;
+
   default:
-    console.log('invalid transform method try: flipImage : invertColor : shufflePixels');
+    console.log('invalid transform method try: flipImage : invertColor : shufflePixels : blackAndWhite');
   }
   console.log('datatransfromed data === ', dataTransformed);
   try {
