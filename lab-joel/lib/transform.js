@@ -33,3 +33,13 @@ transform.shuffle = function(bmp) {
   bmp.pixelArray.slice(54);
   return bmp;
 };
+
+transform.blackWhite = function(bmp) {
+  for(let i = 0; i < bmp.colors.length; i += 4) {
+    let x = ((bmp.colors[i] + bmp.colors[i + 2] + bmp.colors[i + 1]) / 3);
+    bmp.colors[i] = x;
+    bmp.colors[i + 1] = x;
+    bmp.colors[i + 2] = x;
+  }
+  return bmp;
+};
